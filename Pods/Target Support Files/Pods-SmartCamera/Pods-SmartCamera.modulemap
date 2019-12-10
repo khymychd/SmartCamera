@@ -1,0 +1,6 @@
+framework module Pods_SmartCamera {
+  umbrella header "Pods-SmartCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}

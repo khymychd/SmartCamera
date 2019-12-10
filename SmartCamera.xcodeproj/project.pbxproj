@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33A82FB9C0E4B694A2A1EFD4 /* Pods_SmartCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39546EDCDDE4F6F5DA96CCF /* Pods_SmartCamera.framework */; };
+		A01994D823798AC300CE3DF9 /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01994D723798AC300CE3DF9 /* ModelDataHandler.swift */; };
+		A06B59AE23799FB2006E5802 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B59AD23799FB2006E5802 /* Extensions.swift */; };
+		A06B59B02379BF21006E5802 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B59AF2379BF21006E5802 /* OverlayView.swift */; };
+		BE43660E2376C9AD003C6C61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE43660D2376C9AD003C6C61 /* AppDelegate.swift */; };
+		BE4366102376C9AD003C6C61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE43660F2376C9AD003C6C61 /* ViewController.swift */; };
+		BE4366132376C9AD003C6C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4366112376C9AD003C6C61 /* Main.storyboard */; };
+		BE4366152376C9AF003C6C61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4366142376C9AF003C6C61 /* Assets.xcassets */; };
+		BE4366182376C9AF003C6C61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4366162376C9AF003C6C61 /* LaunchScreen.storyboard */; };
+		BE4366212376D24A003C6C61 /* detect.tflite in Resources */ = {isa = PBXBuildFile; fileRef = BE4366202376D24A003C6C61 /* detect.tflite */; };
+		BE4366232376D262003C6C61 /* labelmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE4366222376D262003C6C61 /* labelmap.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B43D9D5231FBE8935A47034 /* Pods-SmartCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCamera.release.xcconfig"; path = "Target Support Files/Pods-SmartCamera/Pods-SmartCamera.release.xcconfig"; sourceTree = "<group>"; };
+		A01994D723798AC300CE3DF9 /* ModelDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
+		A06B59AD23799FB2006E5802 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A06B59AF2379BF21006E5802 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		A3498640B9E5B04AE3EA0CA0 /* Pods-SmartCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCamera.debug.xcconfig"; path = "Target Support Files/Pods-SmartCamera/Pods-SmartCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		BE43660A2376C9AD003C6C61 /* SmartCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE43660D2376C9AD003C6C61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE43660F2376C9AD003C6C61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE4366122376C9AD003C6C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE4366142376C9AF003C6C61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE4366172376C9AF003C6C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE4366192376C9AF003C6C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4366202376D24A003C6C61 /* detect.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = detect.tflite; sourceTree = "<group>"; };
+		BE4366222376D262003C6C61 /* labelmap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labelmap.txt; sourceTree = "<group>"; };
+		F39546EDCDDE4F6F5DA96CCF /* Pods_SmartCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE4366072376C9AD003C6C61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A82FB9C0E4B694A2A1EFD4 /* Pods_SmartCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BBAF835AF8C955F8CFCE962 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3498640B9E5B04AE3EA0CA0 /* Pods-SmartCamera.debug.xcconfig */,
+				1B43D9D5231FBE8935A47034 /* Pods-SmartCamera.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2F0EE188C9B250413BCD29D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F39546EDCDDE4F6F5DA96CCF /* Pods_SmartCamera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0A0E94C237B53BD002799C2 /* ModelDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				A01994D723798AC300CE3DF9 /* ModelDataHandler.swift */,
+			);
+			path = ModelDataHandler;
+			sourceTree = "<group>";
+		};
+		A0A0E94E237B53F8002799C2 /* OverlayView */ = {
+			isa = PBXGroup;
+			children = (
+				A06B59AF2379BF21006E5802 /* OverlayView.swift */,
+			);
+			path = OverlayView;
+			sourceTree = "<group>";
+		};
+		BE4366012376C9AD003C6C61 = {
+			isa = PBXGroup;
+			children = (
+				BE43660C2376C9AD003C6C61 /* SmartCamera */,
+				A0A0E94C237B53BD002799C2 /* ModelDataHandler */,
+				A0A0E94E237B53F8002799C2 /* OverlayView */,
+				BE43661F2376D223003C6C61 /* Model */,
+				BE43660B2376C9AD003C6C61 /* Products */,
+				1BBAF835AF8C955F8CFCE962 /* Pods */,
+				2F0EE188C9B250413BCD29D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE43660B2376C9AD003C6C61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE43660A2376C9AD003C6C61 /* SmartCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE43660C2376C9AD003C6C61 /* SmartCamera */ = {
+			isa = PBXGroup;
+			children = (
+				BE43660D2376C9AD003C6C61 /* AppDelegate.swift */,
+				BE43660F2376C9AD003C6C61 /* ViewController.swift */,
+				A06B59AD23799FB2006E5802 /* Extensions.swift */,
+				BE4366112376C9AD003C6C61 /* Main.storyboard */,
+				BE4366142376C9AF003C6C61 /* Assets.xcassets */,
+				BE4366162376C9AF003C6C61 /* LaunchScreen.storyboard */,
+				BE4366192376C9AF003C6C61 /* Info.plist */,
+			);
+			path = SmartCamera;
+			sourceTree = "<group>";
+		};
+		BE43661F2376D223003C6C61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE4366202376D24A003C6C61 /* detect.tflite */,
+				BE4366222376D262003C6C61 /* labelmap.txt */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE4366092376C9AD003C6C61 /* SmartCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE43661C2376C9AF003C6C61 /* Build configuration list for PBXNativeTarget "SmartCamera" */;
+			buildPhases = (
+				1305004A9F6FA4B116F1CA74 /* [CP] Check Pods Manifest.lock */,
+				BE4366062376C9AD003C6C61 /* Sources */,
+				BE4366072376C9AD003C6C61 /* Frameworks */,
+				BE4366082376C9AD003C6C61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartCamera;
+			productName = SmartCamera;
+			productReference = BE43660A2376C9AD003C6C61 /* SmartCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE4366022376C9AD003C6C61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Dima Khymych";
+				TargetAttributes = {
+					BE4366092376C9AD003C6C61 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = BE4366052376C9AD003C6C61 /* Build configuration list for PBXProject "SmartCamera" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE4366012376C9AD003C6C61;
+			productRefGroup = BE43660B2376C9AD003C6C61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE4366092376C9AD003C6C61 /* SmartCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE4366082376C9AD003C6C61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4366212376D24A003C6C61 /* detect.tflite in Resources */,
+				BE4366182376C9AF003C6C61 /* LaunchScreen.storyboard in Resources */,
+				BE4366152376C9AF003C6C61 /* Assets.xcassets in Resources */,
+				BE4366132376C9AD003C6C61 /* Main.storyboard in Resources */,
+				BE4366232376D262003C6C61 /* labelmap.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1305004A9F6FA4B116F1CA74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE4366062376C9AD003C6C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4366102376C9AD003C6C61 /* ViewController.swift in Sources */,
+				BE43660E2376C9AD003C6C61 /* AppDelegate.swift in Sources */,
+				A01994D823798AC300CE3DF9 /* ModelDataHandler.swift in Sources */,
+				A06B59AE23799FB2006E5802 /* Extensions.swift in Sources */,
+				A06B59B02379BF21006E5802 /* OverlayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE4366112376C9AD003C6C61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4366122376C9AD003C6C61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE4366162376C9AF003C6C61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4366172376C9AF003C6C61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE43661A2376C9AF003C6C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE43661B2376C9AF003C6C61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE43661D2376C9AF003C6C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3498640B9E5B04AE3EA0CA0 /* Pods-SmartCamera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHM2MNN2HL;
+				INFOPLIST_FILE = SmartCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Khymychcrew.SmartCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE43661E2376C9AF003C6C61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B43D9D5231FBE8935A47034 /* Pods-SmartCamera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHM2MNN2HL;
+				INFOPLIST_FILE = SmartCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Khymychcrew.SmartCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE4366052376C9AD003C6C61 /* Build configuration list for PBXProject "SmartCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE43661A2376C9AF003C6C61 /* Debug */,
+				BE43661B2376C9AF003C6C61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE43661C2376C9AF003C6C61 /* Build configuration list for PBXNativeTarget "SmartCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE43661D2376C9AF003C6C61 /* Debug */,
+				BE43661E2376C9AF003C6C61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE4366022376C9AD003C6C61 /* Project object */;
+}

@@ -1,0 +1,12 @@
+item {
+  id: 1
+  name: 'Lichilnik'
+  display_name: 'Lichilnik'
+}
+
+item {
+  id: 2
+  name: 'Two'
+  display_name: 'Two'
+}
+
